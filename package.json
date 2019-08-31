@@ -1,0 +1,100 @@
+{
+  "name": "react-native-pincode-input",
+  "version": "1.0.0",
+  "description": "React Native Pincode Input",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --passWithNoTests"
+  },
+  "author": "Philip Bui",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philip-bui/react-native-pincode-input.git"
+  },
+  "homepage": "https://github.com/philip-bui/react-native-pincode-input#readme",
+  "bugs": {
+    "url": "https://github.com/philip-bui/react-native-pincode-input/issues"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "react-native",
+    "loading",
+    "button"
+  ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-native": "^0.61.3"
+  },
+  "peerDependencies": {
+    "prop-types": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "jest": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "jsx": true,
+        "modules": true,
+        "experimentalObjectRestSpread": true
+      }
+    },
+    "plugins": [
+      "react",
+      "react-native"
+    ],
+    "extends": [
+      "airbnb",
+      "prettier",
+      "prettier/react",
+      "plugin:prettier/recommended",
+      "eslint-config-prettier"
+    ],
+    "rules": {
+      "react/state-in-constructor": "off",
+      "react/static-property-placement": "off",
+      "react/forbid-prop-types": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/prop-types": "off",
+      "react/jsx-filename-extension": [
+        "error",
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ]
+    }
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
