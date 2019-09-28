@@ -1,0 +1,21 @@
+name: build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up NodeJS 10.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+        registry-url: 'https://npm.pkg.github.com'
+    - run: yarn install
+    - run: yarn test
+    - name: Deploy to Github Package Registry
+      run: yarn publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
