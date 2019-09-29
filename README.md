@@ -1,4 +1,4 @@
-# React Native Animated Loading Button
+# React Native Pincode Input
 [![Actions Status](https://github.com/philip-bui/react-native-pincode-input/workflows/build/badge.svg)](https://github.com/philip-bui/react-native-pincode-input/actions)
 
 React Native Pincode Input is a iOS Lock Screen style pincode input.
