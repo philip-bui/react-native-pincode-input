@@ -1,18 +1,20 @@
-name: build
+name: publish
 
-on: [push]
+on:
+  push:
+    tags:
+    - '*'
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Set up NodeJS 10.x
-      uses: actions/setup-node@v1
+    - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
         registry-url: <registry url>
     - run: yarn install
-    - run: yarn lint
-    - run: yarn test
-
+    - run: yarn publish
+      env:
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

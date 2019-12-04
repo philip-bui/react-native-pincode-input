@@ -65,14 +65,6 @@ export default class PincodeInput extends PureComponent {
     shakeAnim: new Animated.Value(0)
   };
 
-  onTextChange = text => {
-    const regex = "^[0-9]*$";
-    const { onTextChange, length } = this.props;
-    if (text.match(regex) && text.length <= length) {
-      onTextChange(text);
-    }
-  };
-
   shake = () => {
     const { shakeAnim } = this.state;
     const values = [10, -7.5, 5, -2.5, 0];
@@ -80,6 +72,14 @@ export default class PincodeInput extends PureComponent {
     Animated.sequence(
       values.map(toValue => Animated.timing(shakeAnim, { toValue, duration }))
     ).start();
+  };
+
+  onTextChange = text => {
+    const regex = "^[0-9]*$";
+    const { onTextChange, length } = this.props;
+    if (text.match(regex) && text.length <= length) {
+      onTextChange(text);
+    }
   };
 
   render() {
