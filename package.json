@@ -1,6 +1,6 @@
 {
   "name": "react-native-pincode-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native Pincode Input",
   "main": "src/index.js",
   "scripts": {
