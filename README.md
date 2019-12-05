@@ -46,8 +46,10 @@ export default class View extends React.Component {
         ref={pincodeInput => this.pincodeInput = pincodeInput}
         length={4}
         containerStyle={{
+          display: "flex",
           width: "100%",
-          height: 200
+          height: 200,
+          justifyContent: "center"
         }}
         circleContainerStyle={{
           paddingHorizontal: 32

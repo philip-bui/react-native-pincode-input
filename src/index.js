@@ -3,9 +3,6 @@ import { StyleSheet, View, Animated, TextInput } from "react-native";
 import PropTypes from "prop-types";
 
 const styles = StyleSheet.create({
-  container: {
-    ...StyleSheet.absoluteFill
-  },
   circleContainer: {
     width: "100%",
     flexDirection: "row",
@@ -46,7 +43,12 @@ export default class PincodeInput extends PureComponent {
 
   static defaultProps = {
     length: 4,
-    containerStyle: {},
+    containerStyle: {
+      display: "flex",
+      width: "100%",
+      height: 200,
+      justifyContent: "center"
+    },
     circleContainerStyle: {
       paddingHorizontal: 32
     },
@@ -110,7 +112,7 @@ export default class PincodeInput extends PureComponent {
     }
     return (
       <View
-        style={StyleSheet.flatten([styles.container, containerStyle])}
+        style={containerStyle}
         accessible
         accessibilityLabel="Pincode"
         accessibilityHint="Type your pincode"
