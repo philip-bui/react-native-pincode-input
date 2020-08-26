@@ -37,7 +37,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-native": "^0.61.3",
-    "react-native-elements": "^1.2.7"
+    "react-native-elements": "^2.2.1"
   },
   "peerDependencies": {
     "prop-types": "*",
