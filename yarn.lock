@@ -2370,9 +2370,9 @@ eslint-config-prettier@^6.5.0:
     get-stdin "^6.0.0"
 
 eslint-config-react-native-lit@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-react-native-lit/-/eslint-config-react-native-lit-1.0.2.tgz#a9e3f732759e4138ca647e0e9e41cd573a874fe0"
-  integrity sha512-UkkrhwUeLwIUQtgPU0P2TSqqrnVq3y6O55L3E0rxByFXO3WgxN5RoUGo0Wx3XeSStIAZEQpQCy+F+nbBuV6+WA==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-react-native-lit/-/eslint-config-react-native-lit-1.0.4.tgz#459a06b551b30f36752642a84f4b2c12eedf76c8"
+  integrity sha512-w2AR12C51TFaAnj3IWvBQq1Ofohki0Vg9cPW4RFIZnAARMl31iTCnZPs9HcIkbK/geHqfUZm5+/R8QYp3iRrDQ==
   dependencies:
     babel-eslint "^10.0.3"
     eslint "^6.6.0"
@@ -2385,6 +2385,7 @@ eslint-config-react-native-lit@^1.0.2:
     eslint-plugin-prettier "^3.1.1"
     eslint-plugin-react "^7.16.0"
     eslint-plugin-react-native "^3.8.1"
+    eslint-plugin-react-redux "^3.0.3"
     prettier "^1.18.2"
 
 eslint-import-resolver-node@^0.3.2:
@@ -2474,6 +2475,14 @@ eslint-plugin-react-native@^3.8.1:
   dependencies:
     eslint-plugin-react-native-globals "^0.1.1"
 
+eslint-plugin-react-redux@^3.0.3:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-redux/-/eslint-plugin-react-redux-3.1.0.tgz#b41110cc3dad640e44f7ed525093b694c66eedc4"
+  integrity sha512-vp3ezrLlqAdt131ToY3r11s4LHoJEQaJkDgBW5mcyPY6VnKPJh/trV2JfjyFzLfhNO+REoLvPkUl6pwXm468BA==
+  dependencies:
+    eslint-plugin-react "^7.16.0"
+    eslint-rule-composer "^0.3.0"
+
 eslint-plugin-react@^7.16.0:
   version "7.17.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.17.0.tgz#a31b3e134b76046abe3cd278e7482bd35a1d12d7"
@@ -2489,6 +2498,11 @@ eslint-plugin-react@^7.16.0:
     object.values "^1.1.0"
     prop-types "^15.7.2"
     resolve "^1.13.1"
+
+eslint-rule-composer@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-rule-composer/-/eslint-rule-composer-0.3.0.tgz#79320c927b0c5c0d3d3d2b76c8b4a488f25bbaf9"
+  integrity sha512-bt+Sh8CtDmn2OajxvNO+BX7Wn4CIWMpTRm3MaiKPCQcnnlm0CS2mhui6QaoeQugs+3Kj2ESKEEGJUdVafwhiCg==
 
 eslint-scope@^5.0.0:
   version "5.0.0"
