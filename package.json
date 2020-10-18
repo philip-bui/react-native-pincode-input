@@ -31,19 +31,16 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
     "eslint-config-react-native-lit": "^1.0.2",
     "jest": "^26.4.2",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
-    "react-native": "^0.63.2",
-    "react-native-elements": "^2.3.2"
+    "react-native": "^0.63.2"
   },
   "peerDependencies": {
     "prop-types": "*",
     "react": "*",
-    "react-native": "*",
-    "react-native-elements": "*"
+    "react-native": "*"
   },
   "eslintConfig": {
     "extends": [
