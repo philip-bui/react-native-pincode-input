@@ -38,7 +38,11 @@ export default class PincodeInput extends PureComponent {
       "numeric",
       "email-address",
       "phone-pad"
-    ])
+    ]),
+    accessible: PropTypes.bool,
+    accessibilityLabel: PropTypes.string,
+    accessibilityHint: PropTypes.string,
+    accessibilityRole: PropTypes.string
   };
 
   static defaultProps = {
@@ -60,7 +64,11 @@ export default class PincodeInput extends PureComponent {
       backgroundColor: "#424242"
     },
     autoFocus: true,
-    keyboardType: "numeric"
+    keyboardType: "numeric",
+    accessible: true,
+    accessibilityLabel: "Pincode",
+    accessibilityHint: "Enter your pincode",
+    accessibilityRole: "text"
   };
 
   state = {
@@ -93,8 +101,7 @@ export default class PincodeInput extends PureComponent {
       circleEmptyStyle,
       circleFilledStyle,
       length,
-      autoFocus,
-      keyboardType
+      ...props
     } = this.props;
     const circleEmptyStyles = StyleSheet.flatten([
       styles.circle,
@@ -107,17 +114,14 @@ export default class PincodeInput extends PureComponent {
     const circles = [];
     for (let i = 0; i < length; i += 1) {
       circles.push(
-        <View style={pin.length > i ? circleFilledStyles : circleEmptyStyles} />
+        <View
+          key={`${i}${pin.length > i}`}
+          style={pin.length > i ? circleFilledStyles : circleEmptyStyles}
+        />
       );
     }
     return (
-      <View
-        style={containerStyle}
-        accessible
-        accessibilityLabel="Pincode"
-        accessibilityHint="Type your pincode"
-        accessibilityElementsHidden
-      >
+      <View style={containerStyle}>
         <Animated.View
           style={StyleSheet.flatten([
             styles.circleContainer,
@@ -131,11 +135,10 @@ export default class PincodeInput extends PureComponent {
         <TextInput
           style={styles.text}
           caretHidden
-          autoFocus={autoFocus}
           maxLength={length}
-          keyboardType={keyboardType}
           onChangeText={this.onTextChange}
           value={pin}
+          {...props}
         />
       </View>
     );
