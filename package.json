@@ -4,8 +4,10 @@
   "description": "React Native Pincode Input",
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "jest --passWithNoTests"
+    "lint": "eslint . --quiet",
+    "test": "jest --noStackTrace --silent --notify",
+    "coverage": "jest --bail --noStackTrace --silent --notify --coverage=true --coverageReporters='text' --coverageReporters='text-summary'",
+    "codecov": "jest --bail --ci --silent --coverage=true --coverageReporters='lcov'"
   },
   "author": "Philip Bui",
   "license": "MIT",
@@ -31,11 +33,13 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "eslint-config-react-native-lit": "^1.0.2",
+    "@testing-library/react-native": "^7.0.2",
+    "eslint-config-react-native-lit": "^1.0.4",
     "jest": "^26.4.2",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
-    "react-native": "^0.63.2"
+    "react-native": "^0.63.2",
+    "react-test-renderer": "^16.14.0"
   },
   "peerDependencies": {
     "prop-types": "*",
