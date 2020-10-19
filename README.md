@@ -4,6 +4,7 @@
 
 # React Native Pincode Input
 [![Actions Status](https://github.com/philip-bui/react-native-pincode-input/workflows/build/badge.svg)](https://github.com/philip-bui/react-native-pincode-input/actions)
+[![CodeCov](https://codecov.io/gh/philip-bui/react-native-pincode-input/branch/master/graph/badge.svg)](https://codecov.io/gh/philip-bui/react-native-pincode-input)
 [![npm](https://img.shields.io/npm/v/react-native-pincode-input.svg?style=flat)](https://www.npmjs.com/package/react-native-pincode-input)
 ![Downloads](https://img.shields.io/npm/dt/react-native-pincode-input.svg?style=flat)
 
