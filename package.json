@@ -39,7 +39,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-native": "^0.63.2",
-    "react-test-renderer": "^16.14.0"
+    "react-test-renderer": "^17.0.0"
   },
   "peerDependencies": {
     "prop-types": "*",
