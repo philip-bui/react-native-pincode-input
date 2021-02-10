@@ -37,7 +37,7 @@
     "eslint-config-react-native-lit": "^1.0.4",
     "jest": "^26.4.2",
     "prop-types": "^15.7.2",
-    "react": "^16.11.0",
+    "react": "^17.0.1",
     "react-native": "^0.63.2",
     "react-test-renderer": "^17.0.0"
   },
